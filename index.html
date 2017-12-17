@@ -151,6 +151,171 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-MongDB基础(学习笔记)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#MongDB基础(学习笔记)</p>
+<p>标签（空格分隔）： MongDB基础  安装 可视化操作        </p>
+<hr>
+<p>##<strong>MongDB随笔</strong></p>
+<ul>
+<li>MongoDB 旨在为WEB应用提供可扩展的高性能数据存储解决方案。</li>
+<li>MongoDB将数据存储为一个文档，数据结构由键值(key=&gt;value)对组成。MongoDB文档类似于JSON对象。字段值可以包含其他文档，数组及文档数组。</li>
+<li>简单说就是一个数据库的学习。</li>
+<li>我学这个呢主要是为了之后可以和node.js配合搭建完整的功能系统,之前学过MySQL,感觉前端用这个更加直观方便(仅个人感受，也是刚入门这个的想法，深入学习后再来改哈哈)。</li>
+<li>数据库相比其他的编程语言还是比较方便学的，所以想往全栈方向走的不要怂，把它怼下去。</li>
+<li>我主要在<a href="http://www.runoob.com/mongodb/mongodb-tutorial.html" target="_blank" rel="noopener">菜鸟教程</a>上自行学习，自己对菜鸟一系列的知识整理非常喜欢，平常忘了什么就上去翻翻，移动现成的笔记。</li>
+<li>MongoDB官网地址:<a href="https://www.mongodb.com/" target="_blank" rel="noopener">https://www.mongodb.com/</a></li>
+</ul>
+<hr>
+<p>##<strong>windows 64-bit 平台安装MongDB</strong></p>
+<p>###1 . MongDB下载</p>
+<ul>
+<li>据说官网上下载是得先注册啥的，不知道什么毛病我直接点download一直没反应，后来又在网上找了个可以<a href="https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.0.6-signed.msi" target="_blank" rel="noopener">直接点击下载</a>的链接，方便你我他。</li>
+<li>根据安装向导的提示，一直next，选择complete，最后finish，即安装成功。</li>
+<li>注意mongodb的安装目录,安装过程中，你可以通过点击”Custom(自定义)”按钮来设置你的安装目录。</li>
+</ul>
+<p>###2 . 创建数据库文件的存放位置</p>
+<ul>
+<li>菜鸟里面是通过命令行</li>
+</ul>
+<blockquote>
+<p><code>c:\&gt;cd c:\</code><br><code>c:\&gt;mkdir data</code><br><code>c:\&gt;cd data</code><br><code>c:\data&gt;mkdir db</code><br><code>c:\data&gt;cd db</code><br><code>c:\data\db&gt;</code></p>
+</blockquote>
+<ul>
+<li>本人比较懒也对这些比较没耐性,直接傻瓜式手动创建,讲白了就是创建data文件夹,再在data文件夹里创建db文件夹(这里名字最好不要随意更改,程序会默认自己找这个目录路径)。</li>
+</ul>
+<p>###3 . 命令行下运行MongDB服务器</p>
+<ul>
+<li><p>先进入MongoDB 目录的 bin 目录中再执行 mongod.exe 文件 进入bin所在目录后,执行如下命令:</p>
+<blockquote>
+<p><code>C:\mongodb\bin\mongod --dbpath c:\data\db</code></p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li>dbpath后面就是你刚刚创建db所在的目录，用来存储你的数据库信息   如果执行成功，会输出如下信息：</li>
+</ul>
+<blockquote>
+<p><code>2015-09-25T15:54:09.212+0800 I CONTROL  Hotfix KB2731284 or later update is not
+installed, will zero-out data files
+2015-09-25T15:54:09.229+0800 I JOURNAL  [initandlisten] journal dir=c:\data\db\j
+ournal
+2015-09-25T15:54:09.237+0800 I JOURNAL  [initandlisten] recover : no journal fil
+es present, no recovery needed
+2015-09-25T15:54:09.290+0800 I JOURNAL  [durability] Durability thread started
+2015-09-25T15:54:09.294+0800 I CONTROL  [initandlisten] MongoDB starting : pid=2
+488 port=27017 dbpath=c:\data\db 64-bit host=WIN-1VONBJOCE88
+2015-09-25T15:54:09.296+0800 I CONTROL  [initandlisten] targetMinOS: Windows 7/W
+indows Server 2008 R2
+2015-09-25T15:54:09.298+0800 I CONTROL  [initandlisten] db version v3.0.6
+……</code></p>
+</blockquote>
+<p>###4 . 连接MongoDB</p>
+<ul>
+<li>刚刚的cmd窗口不要关，回到bin文件夹下，管理员身份运行mongo.exe或者执行如下命令：</li>
+</ul>
+<blockquote>
+<p><code>C:\mongodb\bin\mongo.exe</code></p>
+</blockquote>
+<ul>
+<li>如果执行成功，会输出如下信息：<blockquote>
+<p><code>2017-12-17T14:01:18.011+0800 I CONTROL Hotfix     KB2731284 or later update is not installed,will zero-out data files</code><br><code>MongoDB shell version:3.0.6</code><br><code>connecting to: test</code></p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li>现在就可以在该面板中写一些指令来操作数据库。(到这了已经安装结束啦)<br>###5 . 尝试敲入以下命令：db; use admin;<blockquote>
+<p><code>&gt;db</code><br>test<br><code>&gt;use admin</code><br>switched to db admin </p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<p>   –     再之后要操作数据库就可以直接先双击bin下面的mongod.exe打开服务,再点击mongo.exe就可以开始操作你的数据库了。</p>
+<p>   –     可能这个做法很low,但是我觉得很方便,大概就是懒折腾式操作,我本人比较怕做这些配置啊安装什么的,所以可能会记下很多很不专业但是很实用的方式,专业人士自行绕道哈哈。</p>
+<p>附<br>=</p>
+<ul>
+<li><p>如果一开始不想用命令打开这个程序啊服务什么的，可以进行如下操作:<br>1 . 在安装包的bin目录下放一个配置文件mongodb.conf,内容如下:</p>
+<blockquote>
+<p><code>#数据库路径</code><br>dbpath=C:\data\db </p>
+<p><code>#日志输出文件路径</code><br>logappend=true</p>
+<p><code>#错误日志采用追加模式，配置这个选项后mongodb的日志会追加到现有的日志文件，而不是从新创建一个新文件</code><br>logpath=C:\data\log</p>
+<p><code>#启用日志文件，默认启用</code><br>journal=true</p>
+<p><code>#这个选项可以过滤掉一些无用的日志信息，若需要调试使用请设置为false</code><br>quiet=true</p>
+<p><code>#端口号 默认为27017</code><br>port=27017</p>
+<p><code>#开始用户名密码</code><br>auth=false </p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li><p>记得根据自己的实际情况修改<br>2 . 在安装包的bin目录下放一个启动文件,作用就是用来启动你刚刚的配置文件,内容如下:</p>
+<blockquote>
+<p><code>mongod --config ./mongodb.conf</code></p>
+</blockquote>
+</li>
+<li><p>后面的地址就是你配置文件的相对地址或者绝对地址,建议用绝对地址,不行的话再试相对。</p>
+</li>
+<li>同样还是需要先双击mongod.exe来打开服务,再双击刚刚创建的启动文件,创建成功会输出跟之前一样的信息,如下:<blockquote>
+<p><code>2017-12-17T14:01:18.011+0800 I CONTROL Hotfix     KB2731284 or later update is not installed,will zero-out data files</code><br><code>MongoDB shell version:3.0.6</code><br><code>connecting to: test</code></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="利用Robo-3T来实现对MongDB的可视化操作"><a href="#利用Robo-3T来实现对MongDB的可视化操作" class="headerlink" title="##利用Robo 3T来实现对MongDB的可视化操作"></a>##<strong>利用Robo 3T来实现对MongDB的可视化操作</strong></h2><p>###Robomongo的安装</p>
+<ul>
+<li>官网下载链接<a href="https://robomongo.org/download，根据下载下来的安装向导，傻瓜式安装即可。安装版本Robo" target="_blank" rel="noopener">https://robomongo.org/download，根据下载下来的安装向导，傻瓜式安装即可。安装版本Robo</a> 3T 1.1</li>
+</ul>
+<p>###与MongoDB的连接<br>Robo 3T 1.1点击–&gt;File–&gt;connect–&gt;create</p>
+<ul>
+<li>出现一个面板:Name根据所需修改,Address中默认的localhost就是默认选择了你本地机子上的数据库了,不需要修改</li>
+<li>然后刚刚空白的地方就多出了一条信息(就是你连接本地数据库的信息)</li>
+<li>寻找你的数据库以及表</li>
+<li>右击表会出现对该表的一些操作(可以做一些简单的操作)</li>
+<li>具体的Robo操作网上也有很多,这里就是让你体验一下连接的快感(比看cmd爽多了直观多了,你在这里做的操作会实时更新,所以你此时再用刚刚命令行的方式可以得到你更新后的结果)</li>
+</ul>
+<h2 id="第一次写安装教程-是在装完后补写的-如果你们看到哪里有错或是什么很sb的问题或者是哪里可以改进的-欢迎来骂。"><a href="#第一次写安装教程-是在装完后补写的-如果你们看到哪里有错或是什么很sb的问题或者是哪里可以改进的-欢迎来骂。" class="headerlink" title="###第一次写安装教程,是在装完后补写的,如果你们看到哪里有错或是什么很sb的问题或者是哪里可以改进的,欢迎来骂。"></a>###<strong>第一次写安装教程,是在装完后补写的,如果你们看到哪里有错或是什么很sb的问题或者是哪里可以改进的,欢迎来骂。</strong></h2>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/12/17/MongDB基础(学习笔记)/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-test" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     

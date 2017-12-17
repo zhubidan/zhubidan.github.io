@@ -8,22 +8,16 @@
   <link rel="dns-prefetch" href="https://zhubidan.github.io/blog">
   <title>zbdblog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="欢迎使用 Cmd Markdown 编辑阅读器 我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，Cmd Markdown 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：   整理知识，学习笔记 发布日记，杂文，所见所想 撰写发布技术文稿（代码支持） 撰写发布学术论文（LaTeX 公式支持）    除">
+  <meta name="description" content="#MongDB基础(学习笔记) 标签（空格分隔）： MongDB基础  安装 可视化操作          ##MongDB随笔  MongoDB 旨在为WEB应用提供可扩展的高性能数据存储解决方案。 MongoDB将数据存储为一个文档，数据结构由键值(key=&amp;gt;value)对组成。MongoDB文档类似于JSON对象。字段值可以包含其他文档，数组及文档数组。 简单说就是一个数据库的学习。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="zbdblog">
-<meta property="og:url" content="https://zhubidan.github.io/blog/2017/12/16/test/index.html">
+<meta property="og:url" content="https://zhubidan.github.io/blog/2017/12/17/MongDB基础(学习笔记)/index.html">
 <meta property="og:site_name" content="zbdblog">
-<meta property="og:description" content="欢迎使用 Cmd Markdown 编辑阅读器 我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，Cmd Markdown 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：   整理知识，学习笔记 发布日记，杂文，所见所想 撰写发布技术文稿（代码支持） 撰写发布学术论文（LaTeX 公式支持）    除">
-<meta property="og:image" content="https://www.zybuluo.com/static/img/logo.png">
-<meta property="og:image" content="https://www.zybuluo.com/static/img/toolbar-editor.png">
-<meta property="og:image" content="https://www.zybuluo.com/static/img/toolbar-manager.jpg">
-<meta property="og:image" content="https://www.zybuluo.com/static/img/toolbar-reader.jpg">
-<meta property="og:image" content="https://www.zybuluo.com/static/img/file-list.png">
-<meta property="og:updated_time" content="2017-12-16T08:15:38.046Z">
+<meta property="og:description" content="#MongDB基础(学习笔记) 标签（空格分隔）： MongDB基础  安装 可视化操作          ##MongDB随笔  MongoDB 旨在为WEB应用提供可扩展的高性能数据存储解决方案。 MongoDB将数据存储为一个文档，数据结构由键值(key=&amp;gt;value)对组成。MongoDB文档类似于JSON对象。字段值可以包含其他文档，数组及文档数组。 简单说就是一个数据库的学习。">
+<meta property="og:updated_time" content="2017-12-17T06:56:56.730Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="zbdblog">
-<meta name="twitter:description" content="欢迎使用 Cmd Markdown 编辑阅读器 我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，Cmd Markdown 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：   整理知识，学习笔记 发布日记，杂文，所见所想 撰写发布技术文稿（代码支持） 撰写发布学术论文（LaTeX 公式支持）    除">
-<meta name="twitter:image" content="https://www.zybuluo.com/static/img/logo.png">
+<meta name="twitter:description" content="#MongDB基础(学习笔记) 标签（空格分隔）： MongDB基础  安装 可视化操作          ##MongDB随笔  MongoDB 旨在为WEB应用提供可扩展的高性能数据存储解决方案。 MongoDB将数据存储为一个文档，数据结构由键值(key=&amp;gt;value)对组成。MongoDB文档类似于JSON对象。字段值可以包含其他文档，数组及文档数组。 简单说就是一个数据库的学习。">
   
     <link rel="alternative" href="/atom.xml" title="zbdblog" type="application/atom+xml">
   
@@ -159,96 +153,130 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-test" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-MongDB基础(学习笔记)" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="欢迎使用-Cmd-Markdown-编辑阅读器"><a href="#欢迎使用-Cmd-Markdown-编辑阅读器" class="headerlink" title="欢迎使用 Cmd Markdown 编辑阅读器"></a>欢迎使用 Cmd Markdown 编辑阅读器</h1><hr>
-<p>我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，<strong>Cmd Markdown</strong> 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：</p>
-<blockquote>
+        <p>#MongDB基础(学习笔记)</p>
+<p>标签（空格分隔）： MongDB基础  安装 可视化操作        </p>
+<hr>
+<p>##<strong>MongDB随笔</strong></p>
 <ul>
-<li>整理知识，学习笔记</li>
-<li>发布日记，杂文，所见所想</li>
-<li>撰写发布技术文稿（代码支持）</li>
-<li>撰写发布学术论文（LaTeX 公式支持）</li>
+<li>MongoDB 旨在为WEB应用提供可扩展的高性能数据存储解决方案。</li>
+<li>MongoDB将数据存储为一个文档，数据结构由键值(key=&gt;value)对组成。MongoDB文档类似于JSON对象。字段值可以包含其他文档，数组及文档数组。</li>
+<li>简单说就是一个数据库的学习。</li>
+<li>我学这个呢主要是为了之后可以和node.js配合搭建完整的功能系统,之前学过MySQL,感觉前端用这个更加直观方便(仅个人感受，也是刚入门这个的想法，深入学习后再来改哈哈)。</li>
+<li>数据库相比其他的编程语言还是比较方便学的，所以想往全栈方向走的不要怂，把它怼下去。</li>
+<li>我主要在<a href="http://www.runoob.com/mongodb/mongodb-tutorial.html" target="_blank" rel="noopener">菜鸟教程</a>上自行学习，自己对菜鸟一系列的知识整理非常喜欢，平常忘了什么就上去翻翻，移动现成的笔记。</li>
+<li>MongoDB官网地址:<a href="https://www.mongodb.com/" target="_blank" rel="noopener">https://www.mongodb.com/</a></li>
 </ul>
-</blockquote>
-<p><img src="https://www.zybuluo.com/static/img/logo.png" alt="cmd-markdown-logo"></p>
-<p>除了您现在看到的这个 Cmd Markdown 在线版本，您还可以前往以下网址下载：</p>
-<h3 id="Windows-Mac-Linux-全平台客户端"><a href="#Windows-Mac-Linux-全平台客户端" class="headerlink" title="Windows/Mac/Linux 全平台客户端"></a><a href="https://www.zybuluo.com/cmd/" target="_blank" rel="noopener">Windows/Mac/Linux 全平台客户端</a></h3><blockquote>
-<p>请保留此份 Cmd Markdown 的欢迎稿兼使用说明，如需撰写新稿件，点击顶部工具栏右侧的 <i class="icon-file"></i> <strong>新文稿</strong> 或者使用快捷键 <code>Ctrl+Alt+N</code>。</p>
-</blockquote>
 <hr>
-<h2 id="什么是-Markdown"><a href="#什么是-Markdown" class="headerlink" title="什么是 Markdown"></a>什么是 Markdown</h2><p>Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，<strong>粗体</strong> 或者 <em>斜体</em> 某些文字，更棒的是，它还可以</p>
-<h3 id="1-制作一份待办事宜-Todo-列表"><a href="#1-制作一份待办事宜-Todo-列表" class="headerlink" title="1. 制作一份待办事宜 Todo 列表"></a>1. 制作一份待办事宜 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#13-待办事宜-todo-列表" target="_blank" rel="noopener">Todo 列表</a></h3><ul>
-<li style="list-style: none"><input type="checkbox"> 支持以 PDF 格式导出文稿</li>
-<li style="list-style: none"><input type="checkbox"> 改进 Cmd 渲染算法，使用局部渲染技术提高渲染效率</li>
-<li style="list-style: none"><input type="checkbox" checked> 新增 Todo 列表功能</li>
-<li style="list-style: none"><input type="checkbox" checked> 修复 LaTex 公式渲染问题</li>
-<li style="list-style: none"><input type="checkbox" checked> 新增 LaTex 公式编号功能</li>
+<p>##<strong>windows 64-bit 平台安装MongDB</strong></p>
+<p>###1 . MongDB下载</p>
+<ul>
+<li>据说官网上下载是得先注册啥的，不知道什么毛病我直接点download一直没反应，后来又在网上找了个可以<a href="https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.0.6-signed.msi" target="_blank" rel="noopener">直接点击下载</a>的链接，方便你我他。</li>
+<li>根据安装向导的提示，一直next，选择complete，最后finish，即安装成功。</li>
+<li>注意mongodb的安装目录,安装过程中，你可以通过点击”Custom(自定义)”按钮来设置你的安装目录。</li>
 </ul>
-<h3 id="2-书写一个质能守恒公式-LaTeX"><a href="#2-书写一个质能守恒公式-LaTeX" class="headerlink" title="2. 书写一个质能守恒公式[^LaTeX]"></a>2. 书写一个质能守恒公式[^LaTeX]</h3><p>$$E=mc^2$$</p>
-<h3 id="3-高亮一段代码-code"><a href="#3-高亮一段代码-code" class="headerlink" title="3. 高亮一段代码[^code]"></a>3. 高亮一段代码[^code]</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@requires_authorization</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SomeClass</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="comment"># A comment</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">'hello world'</span></span><br></pre></td></tr></table></figure>
-<h3 id="4-高效绘制-流程图"><a href="#4-高效绘制-流程图" class="headerlink" title="4. 高效绘制 流程图"></a>4. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#7-流程图" target="_blank" rel="noopener">流程图</a></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">st=&gt;start: Start</span><br><span class="line">op=&gt;operation: Your Operation</span><br><span class="line">cond=&gt;condition: Yes or No?</span><br><span class="line">e=&gt;end</span><br><span class="line"></span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br></pre></td></tr></table></figure>
-<h3 id="5-高效绘制-序列图"><a href="#5-高效绘制-序列图" class="headerlink" title="5. 高效绘制 序列图"></a>5. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#8-序列图" target="_blank" rel="noopener">序列图</a></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Alice-&gt;Bob: Hello Bob, how are you?</span><br><span class="line">Note right of Bob: Bob thinks</span><br><span class="line">Bob--&gt;Alice: I am good thanks!</span><br></pre></td></tr></table></figure>
-<h3 id="6-高效绘制-甘特图"><a href="#6-高效绘制-甘特图" class="headerlink" title="6. 高效绘制 甘特图"></a>6. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#9-甘特图" target="_blank" rel="noopener">甘特图</a></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">title 项目开发流程</span><br><span class="line">section 项目确定</span><br><span class="line">    需求分析       :a1, 2016-06-22, 3d</span><br><span class="line">    可行性报告     :after a1, 5d</span><br><span class="line">    概念验证       : 5d</span><br><span class="line">section 项目实施</span><br><span class="line">    概要设计      :2016-07-05  , 5d</span><br><span class="line">    详细设计      :2016-07-08, 10d</span><br><span class="line">    编码          :2016-07-15, 10d</span><br><span class="line">    测试          :2016-07-22, 5d</span><br><span class="line">section 发布验收</span><br><span class="line">    发布: 2d</span><br><span class="line">    验收: 3d</span><br></pre></td></tr></table></figure>
-<h3 id="7-绘制表格"><a href="#7-绘制表格" class="headerlink" title="7. 绘制表格"></a>7. 绘制表格</h3><table>
-<thead>
-<tr>
-<th>项目</th>
-<th style="text-align:right">价格</th>
-<th style="text-align:center">数量</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>计算机</td>
-<td style="text-align:right">\$1600</td>
-<td style="text-align:center">5</td>
-</tr>
-<tr>
-<td>手机</td>
-<td style="text-align:right">\$12</td>
-<td style="text-align:center">12</td>
-</tr>
-<tr>
-<td>管线</td>
-<td style="text-align:right">\$1</td>
-<td style="text-align:center">234</td>
-</tr>
-</tbody>
-</table>
-<h3 id="8-更详细语法说明"><a href="#8-更详细语法说明" class="headerlink" title="8. 更详细语法说明"></a>8. 更详细语法说明</h3><p>想要查看更详细的语法说明，可以参考我们准备的 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown" target="_blank" rel="noopener">Cmd Markdown 简明语法手册</a>，进阶用户可以参考 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#cmd-markdown-高阶语法手册" target="_blank" rel="noopener">Cmd Markdown 高阶语法手册</a> 了解更多高级功能。</p>
-<p>总而言之，不同于其它 <em>所见即所得</em> 的编辑器：你只需使用键盘专注于书写文本内容，就可以生成印刷级的排版格式，省却在键盘和工具栏之间来回切换，调整内容和格式的麻烦。<strong>Markdown 在流畅的书写和印刷级的阅读体验之间找到了平衡。</strong> 目前它已经成为世界上最大的技术分享网站 GitHub 和 技术问答网站 StackOverFlow 的御用书写格式。</p>
+<p>###2 . 创建数据库文件的存放位置</p>
+<ul>
+<li>菜鸟里面是通过命令行</li>
+</ul>
+<blockquote>
+<p><code>c:\&gt;cd c:\</code><br><code>c:\&gt;mkdir data</code><br><code>c:\&gt;cd data</code><br><code>c:\data&gt;mkdir db</code><br><code>c:\data&gt;cd db</code><br><code>c:\data\db&gt;</code></p>
+</blockquote>
+<ul>
+<li>本人比较懒也对这些比较没耐性,直接傻瓜式手动创建,讲白了就是创建data文件夹,再在data文件夹里创建db文件夹(这里名字最好不要随意更改,程序会默认自己找这个目录路径)。</li>
+</ul>
+<p>###3 . 命令行下运行MongDB服务器</p>
+<ul>
+<li><p>先进入MongoDB 目录的 bin 目录中再执行 mongod.exe 文件 进入bin所在目录后,执行如下命令:</p>
+<blockquote>
+<p><code>C:\mongodb\bin\mongod --dbpath c:\data\db</code></p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li>dbpath后面就是你刚刚创建db所在的目录，用来存储你的数据库信息   如果执行成功，会输出如下信息：</li>
+</ul>
+<blockquote>
+<p><code>2015-09-25T15:54:09.212+0800 I CONTROL  Hotfix KB2731284 or later update is not
+installed, will zero-out data files
+2015-09-25T15:54:09.229+0800 I JOURNAL  [initandlisten] journal dir=c:\data\db\j
+ournal
+2015-09-25T15:54:09.237+0800 I JOURNAL  [initandlisten] recover : no journal fil
+es present, no recovery needed
+2015-09-25T15:54:09.290+0800 I JOURNAL  [durability] Durability thread started
+2015-09-25T15:54:09.294+0800 I CONTROL  [initandlisten] MongoDB starting : pid=2
+488 port=27017 dbpath=c:\data\db 64-bit host=WIN-1VONBJOCE88
+2015-09-25T15:54:09.296+0800 I CONTROL  [initandlisten] targetMinOS: Windows 7/W
+indows Server 2008 R2
+2015-09-25T15:54:09.298+0800 I CONTROL  [initandlisten] db version v3.0.6
+……</code></p>
+</blockquote>
+<p>###4 . 连接MongoDB</p>
+<ul>
+<li>刚刚的cmd窗口不要关，回到bin文件夹下，管理员身份运行mongo.exe或者执行如下命令：</li>
+</ul>
+<blockquote>
+<p><code>C:\mongodb\bin\mongo.exe</code></p>
+</blockquote>
+<ul>
+<li>如果执行成功，会输出如下信息：<blockquote>
+<p><code>2017-12-17T14:01:18.011+0800 I CONTROL Hotfix     KB2731284 or later update is not installed,will zero-out data files</code><br><code>MongoDB shell version:3.0.6</code><br><code>connecting to: test</code></p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li>现在就可以在该面板中写一些指令来操作数据库。(到这了已经安装结束啦)<br>###5 . 尝试敲入以下命令：db; use admin;<blockquote>
+<p><code>&gt;db</code><br>test<br><code>&gt;use admin</code><br>switched to db admin </p>
+</blockquote>
+</li>
+</ul>
 <hr>
-<h2 id="什么是-Cmd-Markdown"><a href="#什么是-Cmd-Markdown" class="headerlink" title="什么是 Cmd Markdown"></a>什么是 Cmd Markdown</h2><p>您可以使用很多工具书写 Markdown，但是 Cmd Markdown 是这个星球上我们已知的、最好的 Markdown 工具——没有之一 ：）因为深信文字的力量，所以我们和你一样，对流畅书写，分享思想和知识，以及阅读体验有极致的追求，我们把对于这些诉求的回应整合在 Cmd Markdown，并且一次，两次，三次，乃至无数次地提升这个工具的体验，最终将它演化成一个 <strong>编辑/发布/阅读</strong> Markdown 的在线平台——您可以在任何地方，任何系统/设备上管理这里的文字。</p>
-<h3 id="1-实时同步预览"><a href="#1-实时同步预览" class="headerlink" title="1. 实时同步预览"></a>1. 实时同步预览</h3><p>我们将 Cmd Markdown 的主界面一分为二，左边为<strong>编辑区</strong>，右边为<strong>预览区</strong>，在编辑区的操作会实时地渲染到预览区方便查看最终的版面效果，并且如果你在其中一个区拖动滚动条，我们有一个巧妙的算法把另一个区的滚动条同步到等价的位置，超酷！</p>
-<h3 id="2-编辑工具栏"><a href="#2-编辑工具栏" class="headerlink" title="2. 编辑工具栏"></a>2. 编辑工具栏</h3><p>也许您还是一个 Markdown 语法的新手，在您完全熟悉它之前，我们在 <strong>编辑区</strong> 的顶部放置了一个如下图所示的工具栏，您可以使用鼠标在工具栏上调整格式，不过我们仍旧鼓励你使用键盘标记格式，提高书写的流畅度。</p>
-<p><img src="https://www.zybuluo.com/static/img/toolbar-editor.png" alt="tool-editor"></p>
-<h3 id="3-编辑模式"><a href="#3-编辑模式" class="headerlink" title="3. 编辑模式"></a>3. 编辑模式</h3><p>完全心无旁骛的方式编辑文字：点击 <strong>编辑工具栏</strong> 最右侧的拉伸按钮或者按下 <code>Ctrl + M</code>，将 Cmd Markdown 切换到独立的编辑模式，这是一个极度简洁的写作环境，所有可能会引起分心的元素都已经被挪除，超清爽！</p>
-<h3 id="4-实时的云端文稿"><a href="#4-实时的云端文稿" class="headerlink" title="4. 实时的云端文稿"></a>4. 实时的云端文稿</h3><p>为了保障数据安全，Cmd Markdown 会将您每一次击键的内容保存至云端，同时在 <strong>编辑工具栏</strong> 的最右侧提示 <code>已保存</code> 的字样。无需担心浏览器崩溃，机器掉电或者地震，海啸——在编辑的过程中随时关闭浏览器或者机器，下一次回到 Cmd Markdown 的时候继续写作。</p>
-<h3 id="5-离线模式"><a href="#5-离线模式" class="headerlink" title="5. 离线模式"></a>5. 离线模式</h3><p>在网络环境不稳定的情况下记录文字一样很安全！在您写作的时候，如果电脑突然失去网络连接，Cmd Markdown 会智能切换至离线模式，将您后续键入的文字保存在本地，直到网络恢复再将他们传送至云端，即使在网络恢复前关闭浏览器或者电脑，一样没有问题，等到下次开启 Cmd Markdown 的时候，她会提醒您将离线保存的文字传送至云端。简而言之，我们尽最大的努力保障您文字的安全。</p>
-<h3 id="6-管理工具栏"><a href="#6-管理工具栏" class="headerlink" title="6. 管理工具栏"></a>6. 管理工具栏</h3><p>为了便于管理您的文稿，在 <strong>预览区</strong> 的顶部放置了如下所示的 <strong>管理工具栏</strong>：</p>
-<p><img src="https://www.zybuluo.com/static/img/toolbar-manager.jpg" alt="tool-manager"></p>
-<p>通过管理工具栏可以：</p>
-<p><i class="icon-share"></i> 发布：将当前的文稿生成固定链接，在网络上发布，分享<br><i class="icon-file"></i> 新建：开始撰写一篇新的文稿<br><i class="icon-trash"></i> 删除：删除当前的文稿<br><i class="icon-cloud"></i> 导出：将当前的文稿转化为 Markdown 文本或者 Html 格式，并导出到本地<br><i class="icon-reorder"></i> 列表：所有新增和过往的文稿都可以在这里查看、操作<br><i class="icon-pencil"></i> 模式：切换 普通/Vim/Emacs 编辑模式</p>
-<h3 id="7-阅读工具栏"><a href="#7-阅读工具栏" class="headerlink" title="7. 阅读工具栏"></a>7. 阅读工具栏</h3><p><img src="https://www.zybuluo.com/static/img/toolbar-reader.jpg" alt="tool-manager"></p>
-<p>通过 <strong>预览区</strong> 右上角的 <strong>阅读工具栏</strong>，可以查看当前文稿的目录并增强阅读体验。</p>
-<p>工具栏上的五个图标依次为：</p>
-<p><i class="icon-list"></i> 目录：快速导航当前文稿的目录结构以跳转到感兴趣的段落<br><i class="icon-chevron-sign-left"></i> 视图：互换左边编辑区和右边预览区的位置<br><i class="icon-adjust"></i> 主题：内置了黑白两种模式的主题，试试 <strong>黑色主题</strong>，超炫！<br><i class="icon-desktop"></i> 阅读：心无旁骛的阅读模式提供超一流的阅读体验<br><i class="icon-fullscreen"></i> 全屏：简洁，简洁，再简洁，一个完全沉浸式的写作和阅读环境</p>
-<h3 id="8-阅读模式"><a href="#8-阅读模式" class="headerlink" title="8. 阅读模式"></a>8. 阅读模式</h3><p>在 <strong>阅读工具栏</strong> 点击 <i class="icon-desktop"></i> 或者按下 <code>Ctrl+Alt+M</code> 随即进入独立的阅读模式界面，我们在版面渲染上的每一个细节：字体，字号，行间距，前背景色都倾注了大量的时间，努力提升阅读的体验和品质。</p>
-<h3 id="9-标签、分类和搜索"><a href="#9-标签、分类和搜索" class="headerlink" title="9. 标签、分类和搜索"></a>9. 标签、分类和搜索</h3><p>在编辑区任意行首位置输入以下格式的文字可以标签当前文档：</p>
-<p>标签： 未分类</p>
-<p>标签以后的文稿在【文件列表】（Ctrl+Alt+F）里会按照标签分类，用户可以同时使用键盘或者鼠标浏览查看，或者在【文件列表】的搜索文本框内搜索标题关键字过滤文稿，如下图所示：</p>
-<p><img src="https://www.zybuluo.com/static/img/file-list.png" alt="file-list"></p>
-<h3 id="10-文稿发布和分享"><a href="#10-文稿发布和分享" class="headerlink" title="10. 文稿发布和分享"></a>10. 文稿发布和分享</h3><p>在您使用 Cmd Markdown 记录，创作，整理，阅读文稿的同时，我们不仅希望它是一个有力的工具，更希望您的思想和知识通过这个平台，连同优质的阅读体验，将他们分享给有相同志趣的人，进而鼓励更多的人来到这里记录分享他们的思想和知识，尝试点击 <i class="icon-share"></i> (Ctrl+Alt+P) 发布这份文档给好友吧！</p>
-<hr>
-<p>再一次感谢您花费时间阅读这份欢迎稿，点击 <i class="icon-file"></i> (Ctrl+Alt+N) 开始撰写新的文稿吧！祝您在这里记录、阅读、分享愉快！</p>
-<p>作者 <a href="http://weibo.com/ghosert" target="_blank" rel="noopener">@ghosert</a><br>2016 年 07月 07日    </p>
-<p>[^LaTeX]: 支持 <strong>LaTeX</strong> 编辑显示支持，例如：$\sum_{i=1}^n a_i=0$， 访问 <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" rel="noopener">MathJax</a> 参考更多使用方法。</p>
-<p>[^code]: 代码高亮功能支持包括 Java, Python, JavaScript 在内的，<strong>四十一</strong>种主流编程语言。</p>
-
+<p>   –     再之后要操作数据库就可以直接先双击bin下面的mongod.exe打开服务,再点击mongo.exe就可以开始操作你的数据库了。</p>
+<p>   –     可能这个做法很low,但是我觉得很方便,大概就是懒折腾式操作,我本人比较怕做这些配置啊安装什么的,所以可能会记下很多很不专业但是很实用的方式,专业人士自行绕道哈哈。</p>
+<p>附<br>=</p>
+<ul>
+<li><p>如果一开始不想用命令打开这个程序啊服务什么的，可以进行如下操作:<br>1 . 在安装包的bin目录下放一个配置文件mongodb.conf,内容如下:</p>
+<blockquote>
+<p><code>#数据库路径</code><br>dbpath=C:\data\db </p>
+<p><code>#日志输出文件路径</code><br>logappend=true</p>
+<p><code>#错误日志采用追加模式，配置这个选项后mongodb的日志会追加到现有的日志文件，而不是从新创建一个新文件</code><br>logpath=C:\data\log</p>
+<p><code>#启用日志文件，默认启用</code><br>journal=true</p>
+<p><code>#这个选项可以过滤掉一些无用的日志信息，若需要调试使用请设置为false</code><br>quiet=true</p>
+<p><code>#端口号 默认为27017</code><br>port=27017</p>
+<p><code>#开始用户名密码</code><br>auth=false </p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li><p>记得根据自己的实际情况修改<br>2 . 在安装包的bin目录下放一个启动文件,作用就是用来启动你刚刚的配置文件,内容如下:</p>
+<blockquote>
+<p><code>mongod --config ./mongodb.conf</code></p>
+</blockquote>
+</li>
+<li><p>后面的地址就是你配置文件的相对地址或者绝对地址,建议用绝对地址,不行的话再试相对。</p>
+</li>
+<li>同样还是需要先双击mongod.exe来打开服务,再双击刚刚创建的启动文件,创建成功会输出跟之前一样的信息,如下:<blockquote>
+<p><code>2017-12-17T14:01:18.011+0800 I CONTROL Hotfix     KB2731284 or later update is not installed,will zero-out data files</code><br><code>MongoDB shell version:3.0.6</code><br><code>connecting to: test</code></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="利用Robo-3T来实现对MongDB的可视化操作"><a href="#利用Robo-3T来实现对MongDB的可视化操作" class="headerlink" title="##利用Robo 3T来实现对MongDB的可视化操作"></a>##<strong>利用Robo 3T来实现对MongDB的可视化操作</strong></h2><p>###Robomongo的安装</p>
+<ul>
+<li>官网下载链接<a href="https://robomongo.org/download，根据下载下来的安装向导，傻瓜式安装即可。安装版本Robo" target="_blank" rel="noopener">https://robomongo.org/download，根据下载下来的安装向导，傻瓜式安装即可。安装版本Robo</a> 3T 1.1</li>
+</ul>
+<p>###与MongoDB的连接<br>Robo 3T 1.1点击–&gt;File–&gt;connect–&gt;create</p>
+<ul>
+<li>出现一个面板:Name根据所需修改,Address中默认的localhost就是默认选择了你本地机子上的数据库了,不需要修改</li>
+<li>然后刚刚空白的地方就多出了一条信息(就是你连接本地数据库的信息)</li>
+<li>寻找你的数据库以及表</li>
+<li>右击表会出现对该表的一些操作(可以做一些简单的操作)</li>
+<li>具体的Robo操作网上也有很多,这里就是让你体验一下连接的快感(比看cmd爽多了直观多了,你在这里做的操作会实时更新,所以你此时再用刚刚命令行的方式可以得到你更新后的结果)</li>
+</ul>
+<h2 id="第一次写安装教程-是在装完后补写的-如果你们看到哪里有错或是什么很sb的问题或者是哪里可以改进的-欢迎来骂。"><a href="#第一次写安装教程-是在装完后补写的-如果你们看到哪里有错或是什么很sb的问题或者是哪里可以改进的-欢迎来骂。" class="headerlink" title="###第一次写安装教程,是在装完后补写的,如果你们看到哪里有错或是什么很sb的问题或者是哪里可以改进的,欢迎来骂。"></a>###<strong>第一次写安装教程,是在装完后补写的,如果你们看到哪里有错或是什么很sb的问题或者是哪里可以改进的,欢迎来骂。</strong></h2>
       
 
       
@@ -327,7 +355,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://zhubidan.github.io/blog/2017/12/16/test/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://zhubidan.github.io/blog/2017/12/17/MongDB基础(学习笔记)/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -341,18 +369,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/12/17/MongDB基础(学习笔记)/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/12/16/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2017/12/16/test/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
       <i class="icon-circle-right"></i>
     </a>
   
