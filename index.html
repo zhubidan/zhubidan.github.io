@@ -156,11 +156,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#MongDB基础(学习笔记)</p>
-<p>标签（空格分隔）： MongDB基础  安装 可视化操作        </p>
+        <h1 id="MongDB基础-学习笔记"><a href="#MongDB基础-学习笔记" class="headerlink" title="MongDB基础(学习笔记)"></a>MongDB基础(学习笔记)</h1><p>标签（空格分隔）： MongDB基础  安装 可视化操作        </p>
 <hr>
-<p>##<strong>MongDB随笔</strong></p>
-<ul>
+<h2 id="ngDB随笔"><a href="#ngDB随笔" class="headerlink" title="ngDB随笔"></a><strong>ngDB随笔</strong></h2><ul>
 <li>MongoDB 旨在为WEB应用提供可扩展的高性能数据存储解决方案。</li>
 <li>MongoDB将数据存储为一个文档，数据结构由键值(key=&gt;value)对组成。MongoDB文档类似于JSON对象。字段值可以包含其他文档，数组及文档数组。</li>
 <li>简单说就是一个数据库的学习。</li>
@@ -170,15 +168,12 @@
 <li>MongoDB官网地址:<a href="https://www.mongodb.com/" target="_blank" rel="noopener">https://www.mongodb.com/</a></li>
 </ul>
 <hr>
-<p>##<strong>windows 64-bit 平台安装MongDB</strong></p>
-<p>###1 . MongDB下载</p>
-<ul>
+<h2 id="windows-64-bit-平台安装MongDB"><a href="#windows-64-bit-平台安装MongDB" class="headerlink" title="windows 64-bit 平台安装MongDB"></a><strong>windows 64-bit 平台安装MongDB</strong></h2><h3 id="1-MongDB下载"><a href="#1-MongDB下载" class="headerlink" title="1 . MongDB下载"></a>1 . MongDB下载</h3><ul>
 <li>据说官网上下载是得先注册啥的，不知道什么毛病我直接点download一直没反应，后来又在网上找了个可以<a href="https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.0.6-signed.msi" target="_blank" rel="noopener">直接点击下载</a>的链接，方便你我他。</li>
 <li>根据安装向导的提示，一直next，选择complete，最后finish，即安装成功。</li>
 <li>注意mongodb的安装目录,安装过程中，你可以通过点击”Custom(自定义)”按钮来设置你的安装目录。</li>
 </ul>
-<p>###2 . 创建数据库文件的存放位置</p>
-<ul>
+<h3 id="2-创建数据库文件的存放位置"><a href="#2-创建数据库文件的存放位置" class="headerlink" title="2 . 创建数据库文件的存放位置"></a>2 . 创建数据库文件的存放位置</h3><ul>
 <li>菜鸟里面是通过命令行</li>
 </ul>
 <blockquote>
@@ -187,8 +182,7 @@
 <ul>
 <li>本人比较懒也对这些比较没耐性,直接傻瓜式手动创建,讲白了就是创建data文件夹,再在data文件夹里创建db文件夹(这里名字最好不要随意更改,程序会默认自己找这个目录路径)。</li>
 </ul>
-<p>###3 . 命令行下运行MongDB服务器</p>
-<ul>
+<h3 id="3-命令行下运行MongDB服务器"><a href="#3-命令行下运行MongDB服务器" class="headerlink" title="3 . 命令行下运行MongDB服务器"></a>3 . 命令行下运行MongDB服务器</h3><ul>
 <li><p>先进入MongoDB 目录的 bin 目录中再执行 mongod.exe 文件 进入bin所在目录后,执行如下命令:</p>
 <blockquote>
 <p><code>C:\mongodb\bin\mongod --dbpath c:\data\db</code></p>
@@ -213,8 +207,7 @@ indows Server 2008 R2
 2015-09-25T15:54:09.298+0800 I CONTROL  [initandlisten] db version v3.0.6
 ……</code></p>
 </blockquote>
-<p>###4 . 连接MongoDB</p>
-<ul>
+<h3 id="4-连接MongoDB"><a href="#4-连接MongoDB" class="headerlink" title="4 . 连接MongoDB"></a>4 . 连接MongoDB</h3><ul>
 <li>刚刚的cmd窗口不要关，回到bin文件夹下，管理员身份运行mongo.exe或者执行如下命令：</li>
 </ul>
 <blockquote>
@@ -262,11 +255,11 @@ indows Server 2008 R2
 </blockquote>
 </li>
 </ul>
-<h2 id="利用Robo-3T来实现对MongDB的可视化操作"><a href="#利用Robo-3T来实现对MongDB的可视化操作" class="headerlink" title="##利用Robo 3T来实现对MongDB的可视化操作"></a>##<strong>利用Robo 3T来实现对MongDB的可视化操作</strong></h2><p>###Robomongo的安装</p>
-<ul>
+<h2 id="利用Robo-3T来实现对MongDB的可视化操作"><a href="#利用Robo-3T来实现对MongDB的可视化操作" class="headerlink" title="利用Robo 3T来实现对MongDB的可视化操作"></a><strong>利用Robo 3T来实现对MongDB的可视化操作</strong></h2><hr>
+<h3 id="Robomongo的安装"><a href="#Robomongo的安装" class="headerlink" title="Robomongo的安装"></a>Robomongo的安装</h3><ul>
 <li>官网下载链接<a href="https://robomongo.org/download，根据下载下来的安装向导，傻瓜式安装即可。安装版本Robo" target="_blank" rel="noopener">https://robomongo.org/download，根据下载下来的安装向导，傻瓜式安装即可。安装版本Robo</a> 3T 1.1</li>
 </ul>
-<p>###与MongoDB的连接<br>Robo 3T 1.1点击–&gt;File–&gt;connect–&gt;create</p>
+<h3 id="与MongoDB的连接"><a href="#与MongoDB的连接" class="headerlink" title="与MongoDB的连接"></a>与MongoDB的连接</h3><p>Robo 3T 1.1点击–&gt;File–&gt;connect–&gt;create</p>
 <ul>
 <li>出现一个面板:Name根据所需修改,Address中默认的localhost就是默认选择了你本地机子上的数据库了,不需要修改</li>
 <li>然后刚刚空白的地方就多出了一条信息(就是你连接本地数据库的信息)</li>
@@ -274,7 +267,8 @@ indows Server 2008 R2
 <li>右击表会出现对该表的一些操作(可以做一些简单的操作)</li>
 <li>具体的Robo操作网上也有很多,这里就是让你体验一下连接的快感(比看cmd爽多了直观多了,你在这里做的操作会实时更新,所以你此时再用刚刚命令行的方式可以得到你更新后的结果)</li>
 </ul>
-<h2 id="第一次写安装教程-是在装完后补写的-如果你们看到哪里有错或是什么很sb的问题或者是哪里可以改进的-欢迎来骂。"><a href="#第一次写安装教程-是在装完后补写的-如果你们看到哪里有错或是什么很sb的问题或者是哪里可以改进的-欢迎来骂。" class="headerlink" title="###第一次写安装教程,是在装完后补写的,如果你们看到哪里有错或是什么很sb的问题或者是哪里可以改进的,欢迎来骂。"></a>###<strong>第一次写安装教程,是在装完后补写的,如果你们看到哪里有错或是什么很sb的问题或者是哪里可以改进的,欢迎来骂。</strong></h2>
+<h3 id="第一次写安装教程-是在装完后补写的-如果你们看到哪里有错或是什么很sb的问题或者是哪里可以改进的-欢迎来骂。"><a href="#第一次写安装教程-是在装完后补写的-如果你们看到哪里有错或是什么很sb的问题或者是哪里可以改进的-欢迎来骂。" class="headerlink" title="第一次写安装教程,是在装完后补写的,如果你们看到哪里有错或是什么很sb的问题或者是哪里可以改进的,欢迎来骂。"></a><strong>第一次写安装教程,是在装完后补写的,如果你们看到哪里有错或是什么很sb的问题或者是哪里可以改进的,欢迎来骂。</strong></h3><hr>
+
       
 
       
